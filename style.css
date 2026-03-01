@@ -1,0 +1,55 @@
+body, html {
+margin: 0; padding: 0; height: 100%;
+overflow: hidden;
+background-color: #fffafa;
+}
+
+#jardin {
+width: 100vw; height: 100vh;
+background-image: url('https://i.pinimg.com/736x/9a/87/7e/9a877e0a915d48cb942f39e9fb870319.jpg');
+background-size: cover;
+background-position: center;
+display: flex; justify-content: center; align-items: center;
+position: relative; cursor: crosshair;
+}
+
+#phrase-accueil {
+color: #db7093; 
+font-family: 'Georgia', serif;
+text-align: center;
+font-weight: 300; font-style: italic;
+transition: opacity 2s;
+text-shadow: 2px 2px 4px rgba(255,255,255,0.8);
+z-index: 10;
+}
+
+#compteur {
+position: absolute; bottom: 30px;
+color: #db7093; letter-spacing: 3px;
+font-family: sans-serif;
+background: rgba(255, 255, 255, 0.6);
+padding: 5px 15px; border-radius: 20px;
+transition: opacity 1s;
+}
+
+.cache { opacity: 0; }
+.visible { opacity: 1; }
+
+.fleur {
+position: absolute;
+width: 18px; height: 18px;
+background: #ffb7c5;
+border-radius: 50% 50% 20% 50%;
+animation: eclore 0.8s ease-out forwards;
+z-index: 5;
+pointer-events: none;
+}
+
+.fleur-commune { background: #ffb7c5; }
+.fleur-rare { background: #ff69b4; box-shadow: 0 0 10px #ff1493; }
+.fleur-speciale { background: #ffffff; border: 1px solid #ffb7c5; box-shadow: 0 0 15px #fff; }
+
+@keyframes eclore {
+0% { transform: scale(0) rotate(0deg); opacity: 0; }
+100% { transform: scale(1) rotate(var(--r)); opacity: 0.9; }
+  }
