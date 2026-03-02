@@ -6,7 +6,6 @@ let premierClic = true;
 
 jardin.addEventListener('click', (e) => {
 if (premierClic) {
-phrase.style.opacity = "0.1";
 compteur.classList.remove('cache');
 compteur.classList.add('visible');
 premierClic = false;
