@@ -6,7 +6,7 @@ background-color: #fffafa;
 
 #jardin {
 width: 100%; height: 60%;
-background-image: url('https://i.pinimg.com/736x/9a/87/7e/9a877e0a915d48cb942f39e9fb870319.jpg');
+background-image: url('https://i.pinimg.com/736x/9a/87/7e/9a877e0a915d48cb942f39e9fb870319.jpg'); height: 60%; width: 100%;
 background-size: cover;
 background-position: center;
 display: flex; justify-content: center; align-items: center;
